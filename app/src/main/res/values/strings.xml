@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">매월 10분</string>
+
+    <!-- Common start-->
+
+        <!-- Unit -->
+        <string name="str_unit_minutes">분</string>
+        <string name="str_unit_minutes_variable">%d분</string>
+
+        <string name="str_delete">삭제</string>
+
+    <!-- Common end -->
+
+    <!-- MainActivity -->
+    <string name="str_current_call_time">현재 통화량</string>
+    <string name="str_input_phone_numver">전화번호를 입력하세요</string>
+    <string name="str_save_phone_number">번호 저장</string>
+    <string name="str_do_call">할당량 채우기</string>
+    <string name="str_goal_setting">시간설정</string>
+
+    <!-- Phone Number -->
+    <string name="str_phone_number_weather">기상청</string>
+    <string name="str_phone_number_131">131</string>
+</resources>

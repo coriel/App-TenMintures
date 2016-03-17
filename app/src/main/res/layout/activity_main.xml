@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lifeshortcuts.tenminutes.MainActivity">
+
+    <TextView
+        android:id="@+id/id_tv_current_call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_medium"
+        android:text="@string/str_current_call_time" />
+
+    <include
+        android:layout_below="@id/id_tv_current_call_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/module_show_call_time_achivement"
+        android:layout_above="@+id/include" />
+
+    <include
+        layout="@layout/module_input_phone_number"
+        android:id="@+id/include" />
+
+    <ListView
+        android:id="@+id/id_lv_phone_number"
+        android:layout_above="@+id/id_bt_do_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include" />
+
+    <Button
+        android:id="@+id/id_bt_do_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/str_do_call"/>
+
+</RelativeLayout>
