@@ -1,4 +1,4 @@
-package com.lifeshortcuts.tenminutes;
+package com.lifeshortcuts.tenminutes2;
 
 import org.junit.Test;
 

@@ -7,38 +7,72 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lifeshortcuts.tenminutes.MainActivity">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/id_tv_current_call_time"
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/font_size_medium"
-        android:text="@string/str_current_call_time" />
+        android:text="@string/time_reset"
+        android:id="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <include
-        android:layout_below="@id/id_tv_current_call_time"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/module_show_call_time_achivement"
-        android:layout_above="@+id/include" />
+    <RelativeLayout
+        android:id="@+id/id_show_call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
-    <include
-        layout="@layout/module_input_phone_number"
-        android:id="@+id/include" />
+        <TextView
+            android:id="@+id/id_get_current_call_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_largest" />
 
-    <ListView
-        android:id="@+id/id_lv_phone_number"
-        android:layout_above="@+id/id_bt_do_call"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/include" />
+        <TextView
+            android:id="@+id/id_show_goal_call_time"
+            android:layout_toRightOf="@id/id_get_current_call_time"
+            android:layout_alignBaseline="@id/id_get_current_call_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_medium"
+            android:textColor="@color/light_gray"
+            android:text="@string/str_12min"/>
+
+
+    </RelativeLayout>
+
 
     <Button
         android:id="@+id/id_bt_do_call"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/font_size_medium"
+        android:text="@string/str_do_call"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/title"
+        android:id="@+id/textView"
+        android:layout_above="@+id/id_show_call_time"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:id="@+id/textView2"
         android:layout_alignParentBottom="true"
-        android:text="@string/str_do_call"/>
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
 
 </RelativeLayout>

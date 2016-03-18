@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">매월 10분</string>
+    <string name="app_name">10분만 채워줘</string>
 
     <!-- Common start-->
 
         <!-- Unit -->
         <string name="str_unit_minutes">분</string>
         <string name="str_unit_minutes_variable">%d분</string>
+        <string name="str_12min">12분</string>
 
         <string name="str_delete">삭제</string>
 
@@ -15,10 +16,16 @@
     <string name="str_current_call_time">현재 통화량</string>
     <string name="str_input_phone_numver">전화번호를 입력하세요</string>
     <string name="str_save_phone_number">번호 저장</string>
-    <string name="str_do_call">할당량 채우기</string>
+    <string name="str_do_call">10분만 채워줘</string>
     <string name="str_goal_setting">시간설정</string>
 
     <!-- Phone Number -->
     <string name="str_phone_number_weather">기상청</string>
     <string name="str_phone_number_131">131</string>
+
+    <string name="time_reset">시간 초기화</string>
+
+    <string name="title">현재 통화량 / 목표 통화량</string>
+
+    <string name="info">위 버튼을 누르면 자동 ars로 전화를 겁니다 10분이 경과하면 통화를 종료합니다.\n\n 음성 통화 10분을 확실하게 하기 위해 시간제한을 12분으로 해 두었습니다.</string>
 </resources>
