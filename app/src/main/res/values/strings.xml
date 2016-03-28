@@ -6,9 +6,12 @@
         <!-- Unit -->
         <string name="str_unit_minutes">분</string>
         <string name="str_unit_minutes_variable">%d분</string>
-        <string name="str_12min">12분</string>
+        <string name="str_12min">/12분</string>
 
         <string name="str_delete">삭제</string>
+
+    <string name="str_end_call">통화 종료</string>
+    <string name="banner_ad_unit_id">ca-app-pub-0257062611314783/8248830740</string>
 
     <!-- Common end -->
 

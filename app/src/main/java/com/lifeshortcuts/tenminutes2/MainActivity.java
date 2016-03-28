@@ -17,6 +17,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
+
 public class MainActivity extends AppCompatActivity {
 
     Context mContext;
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     SharedPreference mSharedPreference;
     Button deleteTime;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         mSharedPreference = new SharedPreference(mContext);
         userCallTime = (TextView) findViewById(R.id.id_get_current_call_time);
-        userCallTime.setText(String.valueOf(mSharedPreference.getValue("duration", 0l)/60)+getString(R.string.str_unit_minutes));
+        userCallTime.setText(String.valueOf(mSharedPreference.getValue("duration", 0l) / 60) + getString(R.string.str_unit_minutes));
 
         deleteTime = (Button) findViewById(R.id.button);
 
@@ -47,10 +52,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mSharedPreference.remove("duration");
-                userCallTime.setText("0"+getString(R.string.str_unit_minutes));
+                userCallTime.setText("0" + getString(R.string.str_unit_minutes));
             }
         });
-
 
 
         findViewById(R.id.id_bt_do_call).setOnClickListener(new View.OnClickListener() {
@@ -58,17 +62,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:131"));
                 if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                    // TODO: Consider calling
-                    //    ActivityCompat#requestPermissions
-                    // here to request the missing permissions, and then overriding
-                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                    //                                          int[] grantResults)
-                    // to handle the case where the user grants the permission. See the documentation
-                    // for ActivityCompat#requestPermissions for more details.
 
                     return;
                 }
                 startActivity(intent);
+                startService(new Intent(mContext, AlwaysOnTopService.class));
+                mSharedPreference.put("isServiceOn", true);
             }
         });
 
@@ -76,10 +75,12 @@ public class MainActivity extends AppCompatActivity {
         manager.listen(phoneStateListener, PhoneStateListener.LISTEN_CALL_STATE);
     }
 
+
     private PhoneStateListener phoneStateListener = new PhoneStateListener() {
         public void onCallStateChanged(int state, String incomingNumber) {
             switch (state) {
                 case TelephonyManager.CALL_STATE_IDLE:
+
                     Log.d("call state", "idle");
                     if(offhook) {
                         idle = true;
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                             long min = (duration + mSharedPreference.getValue("duration", 0l));
 
 
-                            if ((mSharedPreference.getValue("duration", 0l)/60) <= (12 * 60)) {
+                            if (mSharedPreference.getValue("isServiceOn", false) && (mSharedPreference.getValue("duration", 0l)/60) <= (12 * 60)) {
                                 Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:131"));
                                 if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                                     // TODO: Consider calling

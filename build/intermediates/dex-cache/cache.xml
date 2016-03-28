@@ -1,2 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-8.4.0_3b6df6ffb28791163eed246bbd33866d0f32ebca.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/internal_impl-23.2.1_fbec63a5320e8187c49a84818d0eda8b01e59058.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.2.1_2d2996813240b703f8864ad0fd11ff4d409dfb0f.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.2.1_f9de29d733fc55f8193a8acb03efe6c0b728fc34.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.2.1_212129a8b8ed1f0d3ab61eb1ca9a6d438df5da3d.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.2.1_60f5f0cfc5b9fc35f1fa039157f53dc57c4ad424.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-ads-8.4.0_056d89d91ce1cb2255af4b52ba03ae853f324631.jar" />
+    </item>
+    <item
+        jar="/Users/coriel/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/Users/coriel/Library/Mobile Documents/com~apple~CloudDocs/Project/TenMintures/app/build/intermediates/pre-dexed/release/support-annotations-23.2.1_f5f9dbcc4cb75cae045cb0d81a83e90f994796bf.jar" />
+    </item>
+
+</items>
